@@ -305,31 +305,32 @@
                                 
                                 <h1 id="3章：-初期設定">3章： 初期設定</h1>
 <hr>
-<h3 id="🤔概要">🤔概要</h3>
+<h2 id="🤔概要">🤔概要</h2>
 <p>このパートでは、サイト模写をするにあたって必要なvs codeの初期設定を行います。cssのメタ言語であるscssを利用することを推奨しています。</p>
-<h3 id="🎚️難易度・目安時間">🎚️難易度・目安時間</h3>
+<p><br></p>
+<h2 id="🎚️難易度・目安時間">🎚️難易度・目安時間</h2>
 <ul>
 <li>難易度：レベル0</li>
 <li>目安時間：20分</li>
 </ul>
-<h3 id="✏️手順書">✏️手順書</h3>
-<hr>
-<p><strong>1. githubでレポジトリの作成をする</strong></p>
-<ul>
-<li>手順<ul>
+<p><br></p>
+<h2 id="✏️手順書">✏️手順書</h2>
+<h3 id="step1-githubでレポジトリの作成をする">Step1. githubでレポジトリの作成をする</h3>
+<p><br></p>
+<p><strong>💡手順ヒント</strong></p>
+<ol>
 <li>（アカウント登録していない人は）<a href="https://github.com/" target="_blank">github</a>に登録する</li>
 <li>Create a new repositoryボタンを押す</li>
 <li>Repository nameを記載</li>
 <li>Privateを選択</li>
 <li>Create repositoryを押し、レポジトリの作成完了</li>
-</ul>
-</li>
-</ul>
-<hr>
-<p><strong>2. git cloneする</strong></p>
+</ol>
+<p><br></p>
+<h3 id="step2-git-cloneする">Step2. git cloneする</h3>
+<p><br></p>
+<p><strong>💡手順ヒント</strong>
+  1, vs codeでターミナルを開く</p>
 <ul>
-<li>手順<ul>
-<li>vs codeでターミナルを開く</li>
 <li>$ cd（ホームディレクトリへ移動）</li>
 <li>$ cd desktop（デスクトップへ移動）</li>
 <li>$ mkdir clone-web-site（フォルダを作成）</li>
@@ -338,37 +339,34 @@
 <li>$ git clone URL（コピーしたURLを貼り付ける）</li>
 <li>cloneしたフォルダをvs codeで開く</li>
 </ul>
-</li>
-</ul>
-<hr>
-<p><strong>3. 作業に必要なファイルやフォルダを作成する</strong></p>
-<p>今回はあえてターミナルを使ってみましょう</p>
-<ul>
-<li>手順<ul>
+<p><br></p>
+<h3 id="step3-作業に必要なファイルやフォルダを作成する">Step3. 作業に必要なファイルやフォルダを作成する</h3>
+<p>今回はあえてターミナルを使ってみましょう
+<br></p>
+<p><strong>💡手順ヒント</strong></p>
+<ol>
 <li>index.htmlの作成（index.htmlはレポジトリ直下に置きます）</li>
 <li>cssフォルダの作成（この配下に.cssを格納します）</li>
 <li>imgフォルダの作成（この配下に画像を格納します）</li>
-</ul>
-</li>
-</ul>
+</ol>
 <ul>
 <li>ヒント<ul>
 <li>ターミナル上でフォルダを作成する時は、$ touch [フォルダ名]</li>
 </ul>
 </li>
 </ul>
-<hr>
-<p><strong>4.index.htmlの初期設定</strong></p>
-<ul>
-<li>手順<ul>
+<p><br></p>
+<h3 id="step4indexhtmlの初期設定">Step4.index.htmlの初期設定*</h3>
+<p><br></p>
+<p><strong>💡手順ヒント</strong></p>
+<ol>
 <li>Doctypeの宣言</li>
 <li>htmlタグ・headタグ・bodyタグの記載</li>
 <li>&lt;html lang=&quot;ja&gt;に設定</li>
 <li>head内でcharsetとtitleの指定</li>
 <li>ブラウザを開き、タイトルが反映されているか確認</li>
-</ul>
-</li>
-</ul>
+</ol>
+<p><br></p>
 <p>▼サンプルコード</p>
 <pre><code class="lang-html"><span class="hljs-meta">&lt;!DOCTYPE html&gt;</span>
 <span class="hljs-tag">&lt;<span class="hljs-name">html</span> <span class="hljs-attr">lang</span>=<span class="hljs-string">&quot;ja&quot;</span>&gt;</span>
@@ -380,46 +378,44 @@
   <span class="hljs-tag">&lt;/<span class="hljs-name">body</span>&gt;</span>
 <span class="hljs-tag">&lt;/<span class="hljs-name">html</span>&gt;</span>
 </code></pre>
-<hr>
-<p><strong>5.git add/push/commitする</strong></p>
-<ul>
-<li>手順<ul>
+<p><br></p>
+<h3 id="step5git-addpushcommitする">Step5.git add/push/commitする</h3>
+<p><br></p>
+<p><strong>💡手順ヒント</strong></p>
+<ol>
 <li>$ git add .</li>
 <li>$ git commit -m &apos;first commit!&apos;</li>
 <li>$ git push -u origin master</li>
 <li>githubでpushされているか確認する</li>
-</ul>
-</li>
-</ul>
+</ol>
+<p><br></p>
 <ul>
 <li>補足<ul>
 <li>commitは最初はなるべく細かく行いましょう。</li>
 </ul>
 </li>
 </ul>
-<hr>
-<p><strong>6.sassの導入</strong></p>
-<ul>
-<li>手順<ul>
+<p><br></p>
+<h3 id="step6sassの導入">Step6.sassの導入</h3>
+<p><br></p>
+<p><strong>💡手順ヒント</strong></p>
+<ol>
 <li>vs codeの拡張機能欄で「Sass」と検索しダウンロード</li>
 <li>css/styles.scssを作成。styles.cssとstyles.min.scssが自動生成されます</li>
 <li>head内に<link rel="stylesheet" href="css/styles.min.css">を指定</li>
-</ul>
-</li>
-</ul>
-<hr>
-<p><strong>7.画像アセットの準備</strong></p>
-<ul>
-<li><p>手順</p>
+</ol>
+<p><br></p>
+<h3 id="step7画像アセットの準備">Step7.画像アセットの準備</h3>
+<p><br></p>
+<p><strong>💡手順ヒント</strong></p>
 <ul>
 <li>事前にダウンロードした画像アセットをimg配下に格納</li>
 </ul>
-</li>
-</ul>
-<hr>
-<p><strong>手順8.セクションをdivやheaderでラップする</strong></p>
-<ul>
-<li>手順<ul>
+<p><br></p>
+<h3 id="step8セクションをdivやheaderでラップする">Step8.セクションをdivやheaderでラップする</h3>
+<p><br></p>
+<p><strong>💡手順ヒント</strong></p>
+<ol>
 <li>body内でセクション（大きなまとまり）をdivで囲う<ul>
 <li>headerとfooterはdivではなく、headerタグとfooterタグを使用する</li>
 </ul>
@@ -428,9 +424,7 @@
 <li>divに対してはそれぞれclass名を記載する</li>
 <li>heightとbackground-colorを仮で指定する</li>
 <li>cssでそれぞれのセクションに対してbackground-colorとheightを指定するbodyに対してmargin: 0;を設定する。</li>
-</ul>
-</li>
-</ul>
+</ol>
 <h3 id="✅チェック">✅チェック</h3>
 <ul>
 <li></li>
@@ -479,7 +473,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"3章：初期設定","level":"1.4","depth":1,"next":{"title":"4章：ヘッダーセクション","level":"1.5","depth":1,"path":"4th.md","ref":"4th.md","articles":[]},"previous":{"title":"2章：事前準備","level":"1.3","depth":1,"path":"2nd.md","ref":"2nd.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"3rd.md","mtime":"2020-11-26T15:17:54.169Z","type":"markdown"},"gitbook":{"version":"3.6.13","time":"2020-11-27T01:28:47.865Z"},"basePath":".","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"3章：初期設定","level":"1.4","depth":1,"next":{"title":"4章：ヘッダーセクション","level":"1.5","depth":1,"path":"4th.md","ref":"4th.md","articles":[]},"previous":{"title":"2章：事前準備","level":"1.3","depth":1,"path":"2nd.md","ref":"2nd.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"3rd.md","mtime":"2020-11-26T15:17:54.169Z","type":"markdown"},"gitbook":{"version":"3.6.13","time":"2020-11-27T06:34:05.480Z"},"basePath":".","book":{"language":""}});
         });
     </script>
 </div>
@@ -531,6 +525,10 @@
     </script>
     <script src="gitbook/gitbook.js"></script>
     <script src="gitbook/theme.js"></script>
+    
+        
+        <script src="gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
     
         
         <script src="gitbook/gitbook-plugin-search/search-engine.js"></script>

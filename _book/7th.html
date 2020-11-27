@@ -304,6 +304,106 @@
                                 <section class="normal markdown-section">
                                 
                                 <h1 id="7章：スキル・経験セクション">7章：スキル・経験セクション</h1>
+<h2 id="🤔概要">🤔概要</h2>
+<p>この章では、テーブルレイアウトを実践します。</p>
+<p><br></p>
+<h2 id="🏁成果物の確認">🏁成果物の確認</h2>
+<p><a href="https://gyazo.com/5576f7d11bbc949430a48fada78e7de0" target="_blank"><img src="https://i.gyazo.com/5576f7d11bbc949430a48fada78e7de0.gif" alt="Image from Gyazo"></a></p>
+<p><br></p>
+<h2 id="🎚️難易度・目安時間">🎚️難易度・目安時間</h2>
+<p>難易度：レベル1<br>
+目安時間：60分</p>
+<p><br></p>
+<h2 id="✏️手順書">✏️手順書</h2>
+<h3 id="step1必要な要素をindexhtmlに記載する">Step1.必要な要素をindex.htmlに記載する</h3>
+<p><strong>🏁ゴールイメージ</strong>
+<a href="https://gyazo.com/1037686368849166557bf226903e8414" target="_blank"><img src="https://i.gyazo.com/1037686368849166557bf226903e8414.png" alt="Image from Gyazo"></a></p>
+<p><br></p>
+<p><strong>💡手順ヒント</strong></p>
+<ol>
+<li>余白の調節をするため、セクションタイトルとテーブルをラップするためのdivを2つ用意する</li>
+<li>セクションタイトルをh2で記載</li>
+<li><p>テーブルの内容の記載</p>
+<ul>
+<li>全体をtableで囲う</li>
+<li>trで列を作る</li>
+<li>１列目のtrの中にthを作成し、行の見出しを作る</li>
+<li>２列目以降のtrの中に、tdでデータを入れる</li>
+</ul>
+<p><br> </p>
+</li>
+</ol>
+<p><strong>📰参考記事</strong>
+<a href="https://developer.mozilla.org/ja/docs/Web/HTML/Element/table" target="_blank">https://developer.mozilla.org/ja/docs/Web/HTML/Element/table</a></p>
+<p><br></p>
+<p> <br></p>
+<h3 id="step2セクションタイトルの上下やセクションの両端の余白を調整する">Step2.セクションタイトルの上下やセクションの両端の余白を調整する</h3>
+<p><strong>🏁ゴールイメージ</strong>
+<a href="https://gyazo.com/2eb39ae90f6a5452ca061244f87a2613" target="_blank"><img src="https://i.gyazo.com/2eb39ae90f6a5452ca061244f87a2613.png" alt="Image from Gyazo"></a></p>
+<p><br></p>
+<p><strong>💡手順ヒント</strong></p>
+<ol>
+<li>一番外側のdivに対して、余白を調節する</li>
+<li>セクションタイトルを中央に配置する</li>
+<li>セクションタイトルの上下の余白を調節する</li>
+</ol>
+<p><br></p>
+<h3 id="step3テーブルのレイアウトを作成する">Step3.テーブルのレイアウトを作成する</h3>
+<p><strong>🏁ゴールイメージ</strong>
+<a href="https://gyazo.com/f63aeea45af52938d8292ed4178eaadb" target="_blank"><img src="https://i.gyazo.com/f63aeea45af52938d8292ed4178eaadb.png" alt="Image from Gyazo"></a></p>
+<p><br></p>
+<p><strong>💡手順ヒント</strong></p>
+<ol>
+<li>tableのレイアウト調整<ul>
+<li>widthを100％で指定</li>
+<li>背景色を指定</li>
+<li>border-collapseで隣接するセルのボーダーを重ねて表示（<a href="http://www.htmq.com/style/border-collapse.shtml）" target="_blank">http://www.htmq.com/style/border-collapse.shtml）</a></li>
+</ul>
+</li>
+<li>trのレイアウト調整<ul>
+<li>borderの指定</li>
+<li>hoverしたときの色を指定</li>
+</ul>
+</li>
+<li><p>tdのレイアウト調整</p>
+<ul>
+<li>1行の幅を指定（100%/4）</li>
+<li>テキストを中央揃え</li>
+</ul>
+<p><br>  </p>
+</li>
+</ol>
+<p><strong>📰参考記事</strong>
+<br>
+表（table）の作り方と装飾の変え方【HTML＆CSS】(<a href="https://saruwakakun.com/html-css/basic/table" target="_blank">https://saruwakakun.com/html-css/basic/table</a>)</p>
+<h3 id="step4それぞれの技術に対してアイコン画像を設置">Step4.それぞれの技術に対してアイコン画像を設置</h3>
+<p><strong>🏁ゴールイメージ</strong>
+<a href="https://gyazo.com/5576f7d11bbc949430a48fada78e7de0" target="_blank"><img src="https://i.gyazo.com/5576f7d11bbc949430a48fada78e7de0.gif" alt="Image from Gyazo"></a>
+<br></p>
+<p><strong>💡手順ヒント</strong></p>
+<ol>
+<li>index.htmlで一つ目のtdに対してクラス名を振る<ul>
+<li>共通のクラス名（レイアウト用）と個別のクラス名（画像指定用）の2つのクラス名</li>
+<li>クラス名を2つするには？？</li>
+</ul>
+</li>
+<li>個別のクラス名に対してはbackground-imageを指定</li>
+<li><p>共通のクラス名で余白やアイコンのサイズを指定</p>
+<ul>
+<li>background-size: // 大きさを調整する</li>
+<li>background-positon: // 位置を調節する</li>
+<li>background-repeat: // 繰り返し表示しない様にする</li>
+</ul>
+<p><br>  </p>
+</li>
+</ol>
+<p><strong>📰参考記事</strong>
+<br>
+cssで見出しにアイコン画像を表示させる方法いろいろ（m<a href="https://www.emuramemo.com/entry/2014/09/13/145432）" target="_blank">https://www.emuramemo.com/entry/2014/09/13/145432）</a></p>
+<h2 id="✅チェック">✅チェック</h2>
+<ul>
+<li></li>
+</ul>
 
                                 
                                 </section>
@@ -347,7 +447,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"7章：スキル・経験セクション","level":"1.8","depth":1,"next":{"title":"8章：制作実績セクション","level":"1.9","depth":1,"path":"8th.md","ref":"8th.md","articles":[]},"previous":{"title":"6章：自己紹介セクション","level":"1.7","depth":1,"path":"6th.md","ref":"6th.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"7th.md","mtime":"2020-11-27T01:28:26.341Z","type":"markdown"},"gitbook":{"version":"3.6.13","time":"2020-11-27T01:28:47.865Z"},"basePath":".","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"7章：スキル・経験セクション","level":"1.8","depth":1,"next":{"title":"8章：制作実績セクション","level":"1.9","depth":1,"path":"8th.md","ref":"8th.md","articles":[]},"previous":{"title":"6章：自己紹介セクション","level":"1.7","depth":1,"path":"6th.md","ref":"6th.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"7th.md","mtime":"2020-11-27T01:28:26.341Z","type":"markdown"},"gitbook":{"version":"3.6.13","time":"2020-11-27T06:34:05.480Z"},"basePath":".","book":{"language":""}});
         });
     </script>
 </div>
@@ -399,6 +499,10 @@
     </script>
     <script src="gitbook/gitbook.js"></script>
     <script src="gitbook/theme.js"></script>
+    
+        
+        <script src="gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
     
         
         <script src="gitbook/gitbook-plugin-search/search-engine.js"></script>
