@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>3章：初期設定 · HonKit</title>
+        <title>10章：フォーム セクション · HonKit</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="HonKit 3.6.13">
@@ -57,10 +57,10 @@
     <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="4th.html" />
+    <link rel="next" href="11st.html" />
     
     
-    <link rel="prev" href="2nd.html" />
+    <link rel="prev" href="9th.html" />
     
 
     </head>
@@ -128,7 +128,7 @@
             
         </li>
     
-        <li class="chapter active" data-level="1.4" data-path="3rd.html">
+        <li class="chapter " data-level="1.4" data-path="3rd.html">
             
                 <a href="3rd.html">
             
@@ -219,7 +219,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.11" data-path="10th.html">
+        <li class="chapter active" data-level="1.11" data-path="10th.html">
             
                 <a href="10th.html">
             
@@ -288,7 +288,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href="." >3章：初期設定</a>
+        <a href="." >10章：フォーム セクション</a>
     </h1>
 </div>
 
@@ -303,139 +303,7 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h1 id="3章：-初期設定">3章： 初期設定</h1>
-<hr>
-<h3 id="🤔概要">🤔概要</h3>
-<p>このパートでは、サイト模写をするにあたって必要なvs codeの初期設定を行います。cssのメタ言語であるscssを利用することを推奨しています。</p>
-<h3 id="🎚️難易度・目安時間">🎚️難易度・目安時間</h3>
-<ul>
-<li>難易度：レベル0</li>
-<li>目安時間：20分</li>
-</ul>
-<h3 id="✏️手順書">✏️手順書</h3>
-<hr>
-<p><strong>1. githubでレポジトリの作成をする</strong></p>
-<ul>
-<li>手順<ul>
-<li>（アカウント登録していない人は）<a href="https://github.com/" target="_blank">github</a>に登録する</li>
-<li>Create a new repositoryボタンを押す</li>
-<li>Repository nameを記載</li>
-<li>Privateを選択</li>
-<li>Create repositoryを押し、レポジトリの作成完了</li>
-</ul>
-</li>
-</ul>
-<hr>
-<p><strong>2. git cloneする</strong></p>
-<ul>
-<li>手順<ul>
-<li>vs codeでターミナルを開く</li>
-<li>$ cd（ホームディレクトリへ移動）</li>
-<li>$ cd desktop（デスクトップへ移動）</li>
-<li>$ mkdir clone-web-site（フォルダを作成）</li>
-<li>$ clone-web-site</li>
-<li>作成したレポジトリからURLをコピー</li>
-<li>$ git clone URL（コピーしたURLを貼り付ける）</li>
-<li>cloneしたフォルダをvs codeで開く</li>
-</ul>
-</li>
-</ul>
-<hr>
-<p><strong>3. 作業に必要なファイルやフォルダを作成する</strong></p>
-<p>今回はあえてターミナルを使ってみましょう</p>
-<ul>
-<li>手順<ul>
-<li>index.htmlの作成（index.htmlはレポジトリ直下に置きます）</li>
-<li>cssフォルダの作成（この配下に.cssを格納します）</li>
-<li>imgフォルダの作成（この配下に画像を格納します）</li>
-</ul>
-</li>
-</ul>
-<ul>
-<li>ヒント<ul>
-<li>ターミナル上でフォルダを作成する時は、$ touch [フォルダ名]</li>
-</ul>
-</li>
-</ul>
-<hr>
-<p><strong>4.index.htmlの初期設定</strong></p>
-<ul>
-<li>手順<ul>
-<li>Doctypeの宣言</li>
-<li>htmlタグ・headタグ・bodyタグの記載</li>
-<li>&lt;html lang=&quot;ja&gt;に設定</li>
-<li>head内でcharsetとtitleの指定</li>
-<li>ブラウザを開き、タイトルが反映されているか確認</li>
-</ul>
-</li>
-</ul>
-<p>▼サンプルコード</p>
-<pre><code class="lang-html"><span class="hljs-meta">&lt;!DOCTYPE html&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">html</span> <span class="hljs-attr">lang</span>=<span class="hljs-string">&quot;ja&quot;</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-name">head</span>&gt;</span>
-     <span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">charset</span>=<span class="hljs-string">&quot;UTF-8&quot;</span>&gt;</span>
-     <span class="hljs-tag">&lt;<span class="hljs-name">title</span>&gt;</span>山田太郎のポートフォリオサイト<span class="hljs-tag">&lt;/<span class="hljs-name">title</span>&gt;</span>
-   <span class="hljs-tag">&lt;/<span class="hljs-name">head</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-name">body</span>&gt;</span>
-  <span class="hljs-tag">&lt;/<span class="hljs-name">body</span>&gt;</span>
-<span class="hljs-tag">&lt;/<span class="hljs-name">html</span>&gt;</span>
-</code></pre>
-<hr>
-<p><strong>5.git add/push/commitする</strong></p>
-<ul>
-<li>手順<ul>
-<li>$ git add .</li>
-<li>$ git commit -m &apos;first commit!&apos;</li>
-<li>$ git push -u origin master</li>
-<li>githubでpushされているか確認する</li>
-</ul>
-</li>
-</ul>
-<ul>
-<li>補足<ul>
-<li>commitは最初はなるべく細かく行いましょう。</li>
-</ul>
-</li>
-</ul>
-<hr>
-<p><strong>6.sassの導入</strong></p>
-<ul>
-<li>手順<ul>
-<li>vs codeの拡張機能欄で「Sass」と検索しダウンロード</li>
-<li>css/styles.scssを作成。styles.cssとstyles.min.scssが自動生成されます</li>
-<li>head内に<link rel="stylesheet" href="css/styles.min.css">を指定</li>
-</ul>
-</li>
-</ul>
-<hr>
-<p><strong>7.画像アセットの準備</strong></p>
-<ul>
-<li><p>手順</p>
-<ul>
-<li>事前にダウンロードした画像アセットをimg配下に格納</li>
-</ul>
-</li>
-</ul>
-<hr>
-<p><strong>手順8.セクションをdivやheaderでラップする</strong></p>
-<ul>
-<li>手順<ul>
-<li>body内でセクション（大きなまとまり）をdivで囲う<ul>
-<li>headerとfooterはdivではなく、headerタグとfooterタグを使用する</li>
-</ul>
-</li>
-<li>​    コードの視認性を上げるためにセクションの上下にコメントを記載する（任意）</li>
-<li>divに対してはそれぞれclass名を記載する</li>
-<li>heightとbackground-colorを仮で指定する</li>
-<li>cssでそれぞれのセクションに対してbackground-colorとheightを指定するbodyに対してmargin: 0;を設定する。</li>
-</ul>
-</li>
-</ul>
-<h3 id="✅チェック">✅チェック</h3>
-<ul>
-<li></li>
-<li></li>
-</ul>
+                                <h1 id="10章：フォーム-セクション">10章：フォーム セクション</h1>
 
                                 
                                 </section>
@@ -463,12 +331,12 @@
 
             
                 
-                <a href="2nd.html" class="navigation navigation-prev " aria-label="Previous page: 2章：事前準備">
+                <a href="9th.html" class="navigation navigation-prev " aria-label="Previous page: 9章：経歴セクション">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
                 
-                <a href="4th.html" class="navigation navigation-next " aria-label="Next page: 4章：ヘッダーセクション">
+                <a href="11st.html" class="navigation navigation-next " aria-label="Next page: 11章：ページ公開part1">
                     <i class="fa fa-angle-right"></i>
                 </a>
                 
@@ -479,7 +347,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"3章：初期設定","level":"1.4","depth":1,"next":{"title":"4章：ヘッダーセクション","level":"1.5","depth":1,"path":"4th.md","ref":"4th.md","articles":[]},"previous":{"title":"2章：事前準備","level":"1.3","depth":1,"path":"2nd.md","ref":"2nd.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"3rd.md","mtime":"2020-11-26T15:17:54.169Z","type":"markdown"},"gitbook":{"version":"3.6.13","time":"2020-11-27T01:28:47.865Z"},"basePath":".","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"10章：フォーム セクション","level":"1.11","depth":1,"next":{"title":"11章：ページ公開part1","level":"1.12","depth":1,"path":"11st.md","ref":"11st.md","articles":[]},"previous":{"title":"9章：経歴セクション","level":"1.10","depth":1,"path":"9th.md","ref":"9th.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"10th.md","mtime":"2020-11-27T01:28:26.352Z","type":"markdown"},"gitbook":{"version":"3.6.13","time":"2020-11-27T01:28:47.865Z"},"basePath":".","book":{"language":""}});
         });
     </script>
 </div>
