@@ -304,6 +304,83 @@
                                 <section class="normal markdown-section">
                                 
                                 <h1 id="6章：自己紹介セクション">6章：自己紹介セクション</h1>
+<h2 id="🤔概要">🤔概要</h2>
+<p>この章では、自己紹介セクションを作成します。ヘッダーでは文字をホバーすると色が変わるCSSを設定しましたが、今回は画像をホバーすると色が変わる方法を実践できます。</p>
+<p><br></p>
+<h2 id="🏁成果物の確認">🏁成果物の確認</h2>
+<p><a href="https://gyazo.com/1e9f7b4936bae20e2c602ad91e63c3c1" target="_blank"><img src="https://i.gyazo.com/1e9f7b4936bae20e2c602ad91e63c3c1.gif" alt="Image from Gyazo"></a>
+上のgihの様に画像にホバーすると色が変わるアイコンを作成しましょう。</p>
+<p><br></p>
+<h2 id="🎚️難易度・目安時間">🎚️難易度・目安時間</h2>
+<p>難易度：レベル1<br>
+目安時間：30分</p>
+<p><br></p>
+<h2 id="✏️手順書">✏️手順書</h2>
+<h3 id="step1必要な要素をindexhtmlに記載する">Step1.必要な要素をindex.htmlに記載する</h3>
+<p><strong>🏁ゴールイメージ</strong></p>
+<p> <a href="https://gyazo.com/fb162fbe29ce5668d7ea48941bb484b6" target="_blank"><img src="https://i.gyazo.com/fb162fbe29ce5668d7ea48941bb484b6.png" alt="Image from Gyazo"></a></p>
+<p><br></p>
+<p><strong>💡手順ヒント</strong></p>
+<ol>
+<li>左右に配置するためにdivを2つ作りましょう。</li>
+<li>1つ目のdivはimgタグを入れ、src属性で画像を指定しましょう</li>
+<li>2つ目のdivはテキストとアイコン画像を挿入しましょう<ul>
+<li>アイコン画像はsvg画像をhtmlで設定しましょう。</li>
+<li>模写サイトのでィベロッパーツールからコピーできます。</li>
+</ul>
+</li>
+</ol>
+<p> <br></p>
+<h3 id="step2cssでレイアウトを整える">Step2.cssでレイアウトを整える</h3>
+<p>🏁ゴールイメージ
+<a href="https://gyazo.com/feb1ec037bb03df52066eff8599d27e6" target="_blank"><img src="https://i.gyazo.com/feb1ec037bb03df52066eff8599d27e6.png" alt="Image from Gyazo"></a></p>
+<p><br></p>
+<p><strong>💡手順ヒント</strong></p>
+<ol>
+<li>親要素の余白を設定</li>
+<li>子要素のwidthとheightを指定</li>
+<li>親要素でflexboxを指定し、子要素を両端横並べにする<ul>
+<li>両端にするにはjustify-contentで値を何にすればいいか？</li>
+</ul>
+</li>
+<li>アイコン画像を横並べにする</li>
+<li>アイコン画像と画像の位置を揃える</li>
+</ol>
+<p><br></p>
+<h3 id="step3svg画像の色をホバー時に変更する">Step3.svg画像の色をホバー時に変更する</h3>
+<p><strong>🏁ゴールイメージ</strong>
+<a href="https://gyazo.com/1e9f7b4936bae20e2c602ad91e63c3c1" target="_blank"><img src="https://i.gyazo.com/1e9f7b4936bae20e2c602ad91e63c3c1.gif" alt="Image from Gyazo"></a></p>
+<p><br></p>
+<p><strong>💡手順ヒント</strong></p>
+<ol>
+<li>a要素がhoverしたときに色を変更する<ul>
+<li>色の塗り潰しにはfill属性を使用する</li>
+</ul>
+</li>
+<li><p>a要素にtransitionを設定し滑らかな滑らかなアニメーションにする</p>
+<ul>
+<li>構成要素<ol>
+<li>transition-duration：○秒間かけて変化する？（単位はs/ms）</li>
+<li>transition-property：どこを変化させる？（ all / none / プロパティ名。）</li>
+<li>transition-timing-function ：どうやって変化させる？(ease-in-out etc..) </li>
+<li>transition-delay：いつから変化させる？（ 単位はs/ms。）<ul>
+<li>transitionは上記4つを一括で指定できる</li>
+</ul>
+</li>
+</ol>
+</li>
+</ul>
+<p><br>  </p>
+</li>
+</ol>
+<p><strong>📰参考記事</strong>
+<br>
+<a href="https://developer.mozilla.org/ja/docs/Web/CSS/CSS_Transitions/Using_CSS_transitions" target="_blank">https://developer.mozilla.org/ja/docs/Web/CSS/CSS_Transitions/Using_CSS_transitions</a>
+<a href="https://qiita.com/7968/items/812d6a21fc4dd9ae9c75" target="_blank">https://qiita.com/7968/items/812d6a21fc4dd9ae9c75</a></p>
+<h2 id="✅チェック">✅チェック</h2>
+<ul>
+<li></li>
+</ul>
 
                                 
                                 </section>
@@ -347,7 +424,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"6章：自己紹介セクション","level":"1.7","depth":1,"next":{"title":"7章：スキル・経験セクション","level":"1.8","depth":1,"path":"7th.md","ref":"7th.md","articles":[]},"previous":{"title":"5章：FVセクション","level":"1.6","depth":1,"path":"5th.md","ref":"5th.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"6th.md","mtime":"2020-11-27T01:28:26.338Z","type":"markdown"},"gitbook":{"version":"3.6.13","time":"2020-11-27T01:28:47.865Z"},"basePath":".","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"6章：自己紹介セクション","level":"1.7","depth":1,"next":{"title":"7章：スキル・経験セクション","level":"1.8","depth":1,"path":"7th.md","ref":"7th.md","articles":[]},"previous":{"title":"5章：FVセクション","level":"1.6","depth":1,"path":"5th.md","ref":"5th.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"6th.md","mtime":"2020-11-27T01:28:26.338Z","type":"markdown"},"gitbook":{"version":"3.6.13","time":"2020-11-27T06:34:05.480Z"},"basePath":".","book":{"language":""}});
         });
     </script>
 </div>
@@ -399,6 +476,10 @@
     </script>
     <script src="gitbook/gitbook.js"></script>
     <script src="gitbook/theme.js"></script>
+    
+        
+        <script src="gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
     
         
         <script src="gitbook/gitbook-plugin-search/search-engine.js"></script>
