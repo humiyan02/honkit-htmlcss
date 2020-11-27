@@ -304,6 +304,87 @@
                                 <section class="normal markdown-section">
                                 
                                 <h1 id="5章：fvセクション">5章：FVセクション</h1>
+<h3 id="🤔概要">🤔概要</h3>
+<p>この章では簡易的なFV（1st view)を作成します。</p>
+<ul>
+<li>子要素の上下中央揃えの方法</li>
+<li>Z-index</li>
+</ul>
+<p>主にこれらを実践できます。</p>
+<h3 id="🏁成果物の確認">🏁成果物の確認</h3>
+<p>(z-indexまだ指定できていない。)</p>
+<p><a href="https://gyazo.com/8876d17ead458c7ed0ceda0745a0b184" target="_blank"><img src="https://i.gyazo.com/8876d17ead458c7ed0ceda0745a0b184.png" alt="Image from Gyazo"></a></p>
+<p><a href="https://gyazo.com/6680e467ac63c26f7876cc0cafc493dc" target="_blank"><img src="https://i.gyazo.com/6680e467ac63c26f7876cc0cafc493dc.png" alt="Image from Gyazo"></a></p>
+<ul>
+<li>要素の重なりは上記の順番になります</li>
+</ul>
+<h3 id="🎚️難易度・目安時間">🎚️難易度・目安時間</h3>
+<ul>
+<li>難易度：レベル1</li>
+<li>目安時間：30分</li>
+</ul>
+<h3 id="✏️手順書">✏️手順書</h3>
+<hr>
+<p><strong>1.必要な要素をindex.htmlに記載する</strong></p>
+<ul>
+<li><p>ゴールイメージ</p>
+<p><a href="https://gyazo.com/9580f4f91df191238321c552922260a6" target="_blank"><img src="https://i.gyazo.com/9580f4f91df191238321c552922260a6.png" alt="Image from Gyazo"></a></p>
+</li>
+</ul>
+<p>※ background-colorは仮で灰色に設定しています。</p>
+<ul>
+<li><p>手順ヒント</p>
+<ul>
+<li>h2とspanタグを使いましょう。</li>
+</ul>
+</li>
+</ul>
+<hr>
+<p> <strong>2.cssでレイアウトを整える</strong></p>
+<ul>
+<li>ゴールイメージ<ul>
+<li>この時点では真ん中のフィルターは設置していません。</li>
+</ul>
+</li>
+</ul>
+<p><a href="https://gyazo.com/9bf3f3a0b7c696d8241adb17b9255128" target="_blank"><img src="https://i.gyazo.com/9bf3f3a0b7c696d8241adb17b9255128.jpg" alt="Image from Gyazo"></a></p>
+<ul>
+<li>手順ヒント<ul>
+<li>background-imageと親要素のheightを設定。</li>
+<li>h2のフォントサイズを調整し、文字色を変更する。</li>
+<li>h2を上下中央揃えにする<ul>
+<li>親要素に対してflexboxを設定してみる</li>
+<li>aligin-itemsやjustify-contentを使ってみましょう</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<hr>
+<p><strong>3.擬似クラスで背景のオーバレイ加工をする。</strong></p>
+<ul>
+<li>ゴールイメージ</li>
+</ul>
+<p><a href="https://gyazo.com/89ca4859ce05841e5b6eff54c23ed9f1" target="_blank"><img src="https://i.gyazo.com/89ca4859ce05841e5b6eff54c23ed9f1.jpg" alt="Image from Gyazo"></a></p>
+<ul>
+<li>手順ヒント<ul>
+<li>擬似クラス（::before）を使用する<ul>
+<li>contentがない場合はどう表記するか思い出しましょう。</li>
+<li>background-colorで配色をrgbaで指定すると透過できる。</li>
+<li>画面一杯に表示するためにposition:abusluteを使う。</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<hr>
+<p><strong>4.z-indexで重なりの順番を指定</strong></p>
+<p>メンタリングの際に確認</p>
+<h3 id="✅チェック">✅チェック</h3>
+<ul>
+<li></li>
+<li></li>
+</ul>
 
                                 
                                 </section>
@@ -347,7 +428,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"5章：FVセクション","level":"1.6","depth":1,"next":{"title":"6章：自己紹介セクション","level":"1.7","depth":1,"path":"6th.md","ref":"6th.md","articles":[]},"previous":{"title":"4章：ヘッダーセクション","level":"1.5","depth":1,"path":"4th.md","ref":"4th.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"5th.md","mtime":"2020-11-27T01:28:26.336Z","type":"markdown"},"gitbook":{"version":"3.6.13","time":"2020-11-27T01:28:47.865Z"},"basePath":".","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"5章：FVセクション","level":"1.6","depth":1,"next":{"title":"6章：自己紹介セクション","level":"1.7","depth":1,"path":"6th.md","ref":"6th.md","articles":[]},"previous":{"title":"4章：ヘッダーセクション","level":"1.5","depth":1,"path":"4th.md","ref":"4th.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"5th.md","mtime":"2020-11-27T06:32:44.001Z","type":"markdown"},"gitbook":{"version":"3.6.13","time":"2020-11-27T06:34:05.480Z"},"basePath":".","book":{"language":""}});
         });
     </script>
 </div>
@@ -399,6 +480,10 @@
     </script>
     <script src="gitbook/gitbook.js"></script>
     <script src="gitbook/theme.js"></script>
+    
+        
+        <script src="gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
     
         
         <script src="gitbook/gitbook-plugin-search/search-engine.js"></script>
